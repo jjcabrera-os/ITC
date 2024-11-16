@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Conversion</h1>
+
+<div class="container">
+    <h2>Celsius to Fahrenheit</h2>
+    <label for="tempInputC">Temperature:</label>
+    <input id="tempInputC" type="number" placeholder="Enter Celsius">
+    <button onclick="convertTemperature('CtoF')">Convert</button>
+    <input type="number" id="tempResultF" readonly placeholder="Result">
+</div>
+
+<div class="container">
+    <h2>Fahrenheit to Celsius</h2>
+    <label for="tempInputC">Temperature:</label>
+    <input id="tempInputC" type="number" placeholder="Enter Fahrenheit">
+    <button onclick="convertTemperature('FtoC')">Convert</button>
+    <input type="number" id="tempResultC" readonly placeholder="Result">
+</div>
+
+<div class="container">
+    <h2>Meters to Feet</h2>
+    <label for="meaInputM">Measurement:</label>
+    <input id="meaInputM" type="number" placeholder="Enter Meters" min="0">
+    <button onclick="convertMeasurement('MtoF')">Convert</button>
+    <input type="number" id="meaResultF" readonly placeholder="Result">
+</div>
+
+<div class="container">
+    <h2>Feet to Meters</h2>
+    <label for="meaInputF">Measurement:</label>
+    <input id="meaInputF" type="number" placeholder="Enter Feet" min="0">
+    <button onclick="convertMeasurement('FtoM')">Convert</button>
+    <input type="number" id="meaResultM" readonly placeholder="Result">
+</div>
+<br>
+
+<p>  
+  <a href="index.html">Back to Home Page</a>
+</p>
+
+</body>
+</html>
