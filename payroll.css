@@ -16,7 +16,7 @@ label {
     margin-bottom: 5px;
 }
 
-input[type="number"], input[type="string"] {
+input[type="number"], input[type="text"] {
     display: block;
     padding: 5px;
     width: 200px;
@@ -37,3 +37,54 @@ input[readonly] {
     background-color: #f9f9f9;
     border: 1px solid #ccc;
 }
+
+#maindiv {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+#left-content {
+    width: 20%;
+}
+
+#right-content {
+    width: 70%;
+}
+    #btnclearcart {
+        float: right; /* Align the button to the right side */
+        margin: 10px 0; /* Add some spacing */
+    }
+
+
+#itemstable {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+#itemstable td, #itemstable th {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+#buttonsdiv button {
+    display: block;
+}
+
+@media (max-width: 1300px) { /* Adjust the breakpoint */
+    #maindiv {
+        flex-wrap: wrap; /* Stack items vertically */
+    }
+
+    #left-content, #right-content {
+        width: 100%; /* Full width on small screens */
+    }
+
+    #right-content {
+        width: 100%;
+        margin-top: 20px; /* Add spacing when stacked */
+    }
+}
+
+
