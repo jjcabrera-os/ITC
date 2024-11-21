@@ -1,35 +1,36 @@
 function addListeners() {
-    document.getElementById("calculate").addEventListener("click", compute);
+    document.getElementById("btnaddtotab").addEventListener("click", addToTab);
 }
-    function compute() {
-        let input1 = document.getElementById("input").value*1;
-        let factorialR;
-        
+    function addToTab() {
+    let employeeName = document.getElementById("employee1").value;
+    let daysWorked = document.getElementById("days1").value;
+    let dailyRate = document.getElementById("rate1").value;
+    let deductionAmount = document.getElementById("amount1").value;
 
-        let x = 1;
-        let result = 1;
-        while (x <= input1) {
-            result *= x;
-            x++;
-        }
-        document.getElementById("factorial1").innerHTML = `The factorial of ${input1} is ${result}`;
+    let grossPay = daysWorked * dailyRate;
+    let netPay = grossPay - deductionAmount;
 
+    let tableBody = document.getElementById("tablebody");
 
-        let y = 1;
-        let result1 = 0;
-        do {
-            result1 += y;
-            y++;
-        } while (y <= input1)
-        document.getElementById("sum2").innerHTML = `The sum of the first ${input1} numbers is ${result1}`;
-        
-        let temp = 0;
-        for (let z = 1; z <= input1; z++) {
-            temp += z;
-        }
-        let result2 = temp / input1;
-        document.getElementById("average3").innerHTML = `The average of the first ${input1} numbers is ${result2.toFixed(2)}`;
-    }
+    let newRow = document.createElement("tr");
+
+    newRow.innerHTML = `
+        <td>${tableBody.rows.length + 1}</td> <!-- Auto-increment employee number -->
+        <td>${employeeName}</td>
+        <td>${daysWorked}</td>
+        <td>${dailyRate}</td>
+        <td>${grossPay.toFixed(2)}</td>
+        <td>${deductionAmount}</td>
+        <td>${netPay.toFixed(2)}</td>
+    `;
+
+    tableBody.appendChild(newRow);
+
+    document.getElementById("employee1").value = "";
+    document.getElementById("days1").value = "";
+    document.getElementById("rate1").value = "";
+    document.getElementById("amount1").value = "";
+}
 
     (() => {
         addListeners();
