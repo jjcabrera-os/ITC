@@ -2,24 +2,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(5, 5, 111); 
+    background-color: rgb(5, 5, 111); /* Background color to match theme */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     flex-direction: column;
-    color: white; 
+    color: white; /* White text for contrast */
 }
 
-h3 {
+.container {
     text-align: center;
-    color: white;
-    margin-bottom: 20px;
-}
-
-.container1 {
-    text-align: center;
-    background-color: #fff;
+    background-color: #fff; /* White background for content */
     padding: 20px;
     margin: 10px;
     border-radius: 8px;
@@ -27,17 +21,21 @@ h3 {
     width: 300px;
 }
 
+h1 {
+    color: rgb(5, 5, 111); /* Heading color matches the theme */
+}
+
 label {
     font-weight: bold;
     margin-right: 10px;
-    color: rgb(5, 5, 111); 
+    color: rgb(5, 5, 111); /* Label color matches theme */
 }
 
 input {
     padding: 5px;
     margin: 10px 0;
     font-size: 14px;
-    border: 1px solid rgb(5, 5, 111); 
+    border: 1px solid rgb(5, 5, 111); /* Input border matches the theme color */
     border-radius: 4px;
     width: 80%;
 }
@@ -46,7 +44,7 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     border: none;
-    background-color: rgb(5, 5, 111); 
+    background-color: rgb(5, 5, 111);
     color: white;
     cursor: pointer;
     border-radius: 4px;
@@ -57,23 +55,24 @@ button:hover {
     background-color: rgb(10, 10, 150); 
 }
 
-p {
-    color: rgb(5, 5, 111); 
-    font-size: 16px;
-}
-
 a {
+    text-decoration: none;
     display: block;
     text-align: center;
     margin-top: 20px;
-    text-decoration: none;
-    color: white;
-    background-color: rgb(5, 5, 111);
-    padding: 10px 20px;
-    border-radius: 4px;
-    width: 300px;
 }
 
-a:hover {
-    background-color: rgb(10, 10, 150); 
+.home-button {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgb(5, 5, 111); 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.home-button:hover {
+    background-color: rgb(10, 10, 150);
 }

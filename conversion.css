@@ -1,39 +1,77 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(5, 5, 111); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    color: white; 
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
 }
 
 .container1, .container2 {
-    margin-bottom: 20px;
+    text-align: center;
+    background-color: #fff; 
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-bottom: 20px; 
 }
 
-.container1 h2, .container2 h2 {
-    margin-bottom: 10px;
+h2 {
+    color: rgb(5, 5, 111); 
 }
 
 label {
-    display: block;
-    margin-bottom: 5px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: rgb(5, 5, 111); 
 }
 
-input[type="number"] {
-    display: block;
+input {
     padding: 5px;
-    width: 200px;
-}
-button {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 5px 10px;
-    cursor: pointer;
+    margin: 10px 0;
     font-size: 14px;
+    border: 1px solid rgb(5, 5, 111);
+    width: 80%;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: rgb(5, 5, 111);
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 5px;
+    text-align: center;
 }
 
 button:hover {
-    background-color: #f0f0f0;
+    background-color: rgb(10, 10, 150);
 }
 
-input[readonly] {
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
+a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(5, 5, 111);
+    padding: 10px 20px;
+    border-radius: 4px;
+    width: 300px;
+}
+
+a:hover {
+    background-color: rgb(10, 10, 150);
 }
