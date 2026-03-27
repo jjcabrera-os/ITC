@@ -1,77 +1,219 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Cabrera</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Jade Cabrera | Portfolio</title>
+    
     <link rel="stylesheet" href="home.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <h1>Personal Website Project</h1>
+    <header id="startup">
+        <div class="startup-text">
+            <span>JUSTIN</span>
+            <span>JADE</span>
+            <span class="highlight">CABRERA.</span>
+        </div>
+
+        <a href="#main-nav" class="scroll-indicator">
+            <p>Scroll to explore</p>
+            <span>↓</span>
+        </a>
     </header>
-<div class="fullcontent">
-    <div>
-        <aside>
-            <h2>CS 1130: Introduction to Computing</h2>
-        </aside>
-    
-        <main>
-            <section>
-                <div class="section">
-                    <a class="content1">Welcome to my academic project website, created as part of my Introduction to Computing course. This site showcases fundamental web development concepts through the use of basic HTML for structure, CSS for styling, and JavaScript for interactivity. It serves as a practical demonstration of my understanding of web design principles and development practices, highlighting skills in layout, design, and basic functionality.</a>
-                    <a class="name">— Justin Jade Cabrera</a>
-                </div>
-            </section>
-        </main>
-    </div>
 
-    <div class="image1">
-        <img src="addu.JPG" alt="Ateneo Photo">
-    </div>
-</div>
-
-
-    <nav>
+    <nav id="main-nav">
+        <div class="logo">JJC.</div>
         <ul>
-            <li><a href="index.html">About</a></li>
-            <li class="dropdown">
-                <a>Assignments</a>
-                <ul class="dropdown-content">
-                    <li><a href="conversion.html">Conversion</a></li>
-                    <li><a href="incometax.html">Income Tax Calculator</a></li>
-                    <li><a href="factorial&sum.html">Factorial and Sum</a></li>
-                    <li><a href="payroll.html">Simple Payroll</a></li>
-                </ul>
-            </li>
-            <li class="right-text">
-                <span>Cabrera JJ</span>
-            </li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#affiliations">Affiliations</a></li>
         </ul>
     </nav>
 
-    <script>
-       document.addEventListener('DOMContentLoaded', function () {
-    var dropdown = document.querySelector('.dropdown');
-    dropdown.addEventListener('click', function (e) {
-        e.preventDefault();
-        var dropdownContent = this.querySelector('.dropdown-content');
-        if (dropdownContent.style.display === 'block') {
-            dropdownContent.style.display = 'none';
-        } else {
-            dropdownContent.style.display = 'block';
-        }
-    });
-    var dropdownLinks = document.querySelectorAll('.dropdown-content a');
-    dropdownLinks.forEach(function(link) {
-        link.addEventListener('click', function(e) {
-            window.location.href = this.href;
-        });
-    });
-});
+    <section id="about" class="bento-section">
+        <h2 class="bento-title">Bits & Pieces of Me</h2>
+        
+        <div class="bento-grid">
+            
+            <div class="bento-card photo-card">
+                <img src="addufull.jpg" alt="Justin Jade Cabrera" class="bento-img">
+            </div>
 
-    </script>
+            <div class="bento-card bio-card">
+                <div class="card-header">
+                    <span class="icon">👤</span> Profile
+                </div>
+                <h1>Justin Jade Cabrera</h1>
+                <p class="bento-subtitle">> BS Information Technology — AdDU</p>
+                <p class="bento-description">
+                    Passionate information technology student building meaningful digital experiences. I love crafting clean code, exploring emerging technologies, and turning complex problems into elegant solutions. Welcome to my digital space.
+                </p>
+            </div>
+
+            <div class="bento-right-column">
+                
+                <div class="bento-card connect-card">
+                    <div class="card-header"><span class="icon">🔗</span> Connect</div>
+                    <ul class="connect-list">
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+                
+                <div class="bento-split">
+                    <div class="bento-card small-card">
+                        <div class="card-header"><span class="icon">>_</span> Fav Tool</div>
+                        <div class="card-body">VS Code</div>
+                    </div>
+                    <div class="bento-card small-card">
+                        <div class="card-header"><span class="icon">&lt;&gt;</span> Fav Language</div>
+                        <div class="card-body">JavaScript</div>
+                    </div>
+                </div>
+
+                <div class="bento-card location-card">
+                    <div class="card-header">Location</div>
+                    <div class="card-body">Davao City, Philippines</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">Skills & Tools</h2>
+        
+        <div class="skills-wrapper">
+            <div class="skills-category">
+                <h3 class="category-title">Technologies</h3>
+                <div class="skills-grid">
+                    <div class="skill-box">HTML5</div>
+                    <div class="skill-box">CSS3</div>
+                    <div class="skill-box">JavaScript</div>
+                    <div class="skill-box">Java</div>
+                    <div class="skill-box">MySQL</div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3 class="category-title">Tools</h3>
+                <div class="skills-grid">
+                    <div class="skill-box">VS Code</div>
+                    <div class="skill-box">Visual Studio</div>
+                    <div class="skill-box">MySQL Workbench</div>
+                    <div class="skill-box">GitHub</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2 class="section-title">Education & Achievements</h2>
+        
+        <div class="timeline">
+            <div class="timeline-item active">
+                <span class="date-badge">2023 - Present</span>
+                <h3>Undergraduate</h3>
+                <p class="school-name">Ateneo De Davao University</p>
+                <p class="school-desc">Currently pursuing a degree in Information Technology. Focused on web development, system design, and software engineering principles.</p>
+            </div>
+
+            <div class="timeline-item inactive">
+                <span class="date-badge past">2021 - 2023</span>
+                <h3>Senior High School</h3>
+                <p class="school-name">University Laboratory School - USM</p>
+                <ul class="achievements">
+                    <li>Graduated with Honors</li>
+                    <li>Best Research Presenter</li>
+                    <li>Special Award in Research and Innovation</li>
+                    <li>Badminton Congressional Sports Meet Qualifier</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item inactive">
+                <span class="date-badge past">2017 - 2021</span>
+                <h3>Junior High School</h3>
+                <p class="school-name">University Laboratory School - USM</p>
+                <ul class="achievements">
+                    <li>Graduated with Honors</li>
+                    <li>Math Olympics Regionals Qualifier</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item inactive">
+                <span class="date-badge past">2011 - 2017</span>
+                <h3>Elementary</h3>
+                <p class="school-name">ABC Educational Development Center</p>
+                <ul class="achievements">
+                    <li>Graduated as Salutatorian</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">My Projects</h2>
+        <div class="project-grid">
+            
+            <div class="project-card">
+                <h3>Unit Converter</h3>
+                <p>Converts Temperature and Measurements.</p>
+                <div class="tech-tags">
+                    <span class="tag">HTML</span> <span class="tag">CSS</span> <span class="tag">JavaScript</span>
+                </div>
+                <a href="conversion.html" class="btn">View Calculator</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Income Tax</h3>
+                <p>Computes income tax based on salary brackets.</p>
+                <div class="tech-tags">
+                    <span class="tag">HTML</span> <span class="tag">CSS</span> <span class="tag">JavaScript</span>
+                </div>
+                <a href="incometax.html" class="btn">View Calculator</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Factorial & Sum</h3>
+                <p>Calculates the first N natural numbers.</p>
+                <div class="tech-tags">
+                    <span class="tag">HTML</span> <span class="tag">CSS</span> <span class="tag">JavaScript</span>
+                </div>
+                <a href="factorial&sum.html" class="btn">View Calculator</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Simple Payroll</h3>
+                <p>Computes gross pay, deductions, and net pay.</p>
+                <div class="tech-tags">
+                    <span class="tag">HTML</span> <span class="tag">CSS</span> <span class="tag">JavaScript</span>
+                </div>
+                <a href="payroll.html" class="btn">View Calculator</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="affiliations">
+        <h2 class="section-title">Affiliations</h2>
+        <div class="affiliation-card">
+            <h3>ACCESS AdDU</h3>
+            <p>Active Member</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Justin Jade Cabrera. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
