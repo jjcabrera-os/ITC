@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Justin Jade Cabrera | Portfolio</title>
-    
     <link rel="stylesheet" href="home.css">
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <div class="custom-cursor" id="cursor"></div>
+    
+    <div class="bg-orb orb-teal"></div>
+    <div class="bg-orb orb-gold"></div>
+
     <header id="startup">
         <div class="startup-text">
             <span>JUSTIN</span>
             <span>JADE</span>
-            <span class="highlight">CABRERA.</span>
+            <span class="highlight glitch-text" data-value="CABRERA." id="main-title">CABRERA.</span>
         </div>
 
         <a href="#main-nav" class="scroll-indicator">
@@ -26,8 +29,25 @@
         </a>
     </header>
 
+    <div class="marquee-container">
+        <div class="marquee-track">
+            <span class="marquee-text">WEB DEVELOPER</span>
+            <span class="marquee-dot">•</span>
+            <span class="marquee-text">HOBBY PHOTOGRAPHER</span>
+            <span class="marquee-dot">•</span>
+            <span class="marquee-text">BADMINTON ATHLETE</span>
+            <span class="marquee-dot">•</span>
+            <span class="marquee-text">FRONTEND DEVELOPER</span>
+            <span class="marquee-dot">•</span>
+            <span class="marquee-text">TECH ENTHUSIAST</span>
+            <span class="marquee-dot">•</span>
+            <span class="marquee-text">GFX DESIGNER</span>
+            <span class="marquee-dot">•</span>
+        </div>
+    </div>
+
     <nav id="main-nav">
-        <div class="logo">JJC.</div>
+        <div class="logo glitch-text" data-value="JJC.">JJC.</div>
         <ul>
             <li><a href="#about">About Me</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -41,16 +61,15 @@
         <h2 class="bento-title">Bits & Pieces of Me</h2>
         
         <div class="bento-grid">
-            
             <div class="bento-card photo-card">
-                <img src="addufull.jpg" alt="Justin Jade Cabrera" class="bento-img">
+                <img src="me.jpg" alt="Justin Jade Cabrera" class="bento-img">
             </div>
 
             <div class="bento-card bio-card">
                 <div class="card-header">
                     <span class="icon">👤</span> Profile
                 </div>
-                <h1>Justin Jade Cabrera</h1>
+                <h1><span class="text-teal">Justin</span> Jade Cabrera</h1>
                 <p class="bento-subtitle">> BS Information Technology — AdDU</p>
                 <p class="bento-description">
                     Passionate information technology student building meaningful digital experiences. I love crafting clean code, exploring emerging technologies, and turning complex problems into elegant solutions. Welcome to my digital space.
@@ -58,7 +77,6 @@
             </div>
 
             <div class="bento-right-column">
-                
                 <div class="bento-card connect-card">
                     <div class="card-header"><span class="icon">🔗</span> Connect</div>
                     <ul class="connect-list">
@@ -72,11 +90,11 @@
                 <div class="bento-split">
                     <div class="bento-card small-card">
                         <div class="card-header"><span class="icon">>_</span> Fav Tool</div>
-                        <div class="card-body">VS Code</div>
+                        <div class="card-body"><span class="text-gold">VS Code</span></div>
                     </div>
                     <div class="bento-card small-card">
                         <div class="card-header"><span class="icon">&lt;&gt;</span> Fav Language</div>
-                        <div class="card-body">JavaScript</div>
+                        <div class="card-body"><span class="text-gold">JavaScript</span></div>
                     </div>
                 </div>
 
@@ -84,7 +102,6 @@
                     <div class="card-header">Location</div>
                     <div class="card-body">Davao City, Philippines</div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -96,33 +113,13 @@
             <div class="skills-category">
                 <h3 class="category-title">Technologies</h3>
                 <div class="skills-grid">
-                    <div class="skill-box">
-                        HTML5
-                    </div>
-                    <div class="skill-box">
-                        CSS3
-                        <span class="tag-little">Knows a little</span>
-                    </div>
-                    <div class="skill-box">
-                        JavaScript
-                        <span class="tag-little">Knows a little</span>
-                    </div>
-                    <div class="skill-box">
-                        Python
-                        <span class="tag-beginner">Complete beginner</span>
-                    </div>
-                    <div class="skill-box">
-                        C++
-                        <span class="tag-beginner">Complete beginner</span>
-                    </div>
-                    <div class="skill-box">
-                        Java
-                        <span class="tag-beginner">Complete beginner</span>
-                    </div>
-                    <div class="skill-box">
-                        MySQL
-                        <span class="tag-little">Knows a little</span>
-                    </div>
+                    <div class="skill-box">HTML5</div>
+                    <div class="skill-box">CSS3<span class="tag-little">Knows a little</span></div>
+                    <div class="skill-box">JavaScript<span class="tag-little">Knows a little</span></div>
+                    <div class="skill-box">Python<span class="tag-beginner">Complete beginner</span></div>
+                    <div class="skill-box">C++<span class="tag-beginner">Complete beginner</span></div>
+                    <div class="skill-box">Java<span class="tag-beginner">Complete beginner</span></div>
+                    <div class="skill-box">MySQL<span class="tag-little">Knows a little</span></div>
                 </div>
             </div>
 
@@ -146,7 +143,7 @@
                 <span class="date-badge">2023 - Present</span>
                 <h3>Undergraduate</h3>
                 <p class="school-name">Ateneo De Davao University</p>
-                <p class="school-desc">Currently pursuing a degree in Information Technology. Focused on web development, system design, and software engineering principles.</p>
+                <p class="school-desc">Currently pursuing a degree in <span class="text-teal">Information Technology</span>. Focused on web development, system design, and software engineering principles.</p>
             </div>
 
             <div class="timeline-item inactive">
@@ -186,36 +183,36 @@
         <h2 class="section-title">My Projects</h2>
         <div class="project-grid">
             
-            <div class="project-card">
+            <div class="project-card tilt-card">
                 <h3>Unit Converter</h3>
-                <p>Converts Temperature and Measurements.</p>
+                <p>Converts <span class="text-gold">Temperature</span> and <span class="text-gold">Measurements</span>.</p>
                 <div class="tech-tags">
                     <span class="tag">HTML</span> <span class="tag">CSS</span> <span class="tag">JavaScript</span>
                 </div>
                 <a href="conversion.html" class="btn">View Calculator</a>
             </div>
 
-            <div class="project-card">
+            <div class="project-card tilt-card">
                 <h3>Income Tax</h3>
-                <p>Computes income tax based on salary brackets.</p>
+                <p>Computes income tax based on <span class="text-teal">salary brackets</span>.</p>
                 <div class="tech-tags">
                     <span class="tag">HTML</span> <span class="tag">CSS</span> <span class="tag">JavaScript</span>
                 </div>
                 <a href="incometax.html" class="btn">View Calculator</a>
             </div>
 
-            <div class="project-card">
+            <div class="project-card tilt-card">
                 <h3>Factorial & Sum</h3>
-                <p>Calculates the first N natural numbers.</p>
+                <p>Calculates the first <span class="text-gold">N natural numbers</span>.</p>
                 <div class="tech-tags">
                     <span class="tag">HTML</span> <span class="tag">CSS</span> <span class="tag">JavaScript</span>
                 </div>
                 <a href="factorial&sum.html" class="btn">View Calculator</a>
             </div>
 
-            <div class="project-card">
+            <div class="project-card tilt-card">
                 <h3>Simple Payroll</h3>
-                <p>Computes gross pay, deductions, and net pay.</p>
+                <p>Computes gross pay, deductions, and <span class="text-teal">net pay</span>.</p>
                 <div class="tech-tags">
                     <span class="tag">HTML</span> <span class="tag">CSS</span> <span class="tag">JavaScript</span>
                 </div>
@@ -227,9 +224,35 @@
 
     <section id="affiliations">
         <h2 class="section-title">Affiliations</h2>
-        <div class="affiliation-card">
-            <h3>ACCESS AdDU</h3>
-            <p>Active Member</p>
+        
+        <div class="affiliation-list">
+            <div class="affiliation-item">
+                <div class="affiliation-details">
+                    <span class="affiliation-icon">🤝</span>
+                    <div class="affiliation-text-group">
+                        <h3>ACCESS AdDU</h3>
+                        <p class="affiliation-desc">Official student organization for Information Technology.</p>
+                    </div>
+                </div>
+                <div class="affiliation-meta">
+                    <span class="affiliation-role text-teal">Active Member</span>
+                    <span class="affiliation-date">2023 - Present</span>
+                </div>
+            </div>
+
+            <div class="affiliation-item">
+                <div class="affiliation-details">
+                    <span class="affiliation-icon">💻</span>
+                    <div class="affiliation-text-group">
+                        <h3>IT Student Council</h3>
+                        <p class="affiliation-desc">Assisting in organizing tech seminars and workshops.</p>
+                    </div>
+                </div>
+                <div class="affiliation-meta">
+                    <span class="affiliation-role text-gold">Volunteer</span>
+                    <span class="affiliation-date">2024 - Present</span>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -237,5 +260,6 @@
         <p>&copy; 2026 Justin Jade Cabrera. All Rights Reserved.</p>
     </footer>
 
+    <script src="home.js"></script>
 </body>
 </html>
